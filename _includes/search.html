@@ -11,9 +11,9 @@
 
         <div class="search_topics">
             <strong>Most searched topics:</strong>
-            <a href="{{site.url}}/how-can-i-update-timeline/">timelines</a>,
-            <a href="{{site.url}}/when-cerate-shipment/">shipments</a>,
-            <a href="{{site.url}}/how-to-improve-ratings/">ratings</a>
+            <a href="how-can-i-update-timeline/">timelines</a>,
+            <a href="when-cerate-shipment/">shipments</a>,
+            <a href="how-to-improve-ratings/">ratings</a>
         </div>
         <ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="result-container"></ul>
     </div>
@@ -22,14 +22,14 @@
 
 
 <!-- Script pointing to search-script.js -->
-<script src="{{site.url}}/assets/js/search.js" type="text/javascript"></script>
+<script src="assets/js/search.js" type="text/javascript"></script>
 
 <!-- Configuration -->
 <script>
     SimpleJekyllSearch({
         searchInput: document.getElementById('query'),
         resultsContainer: document.getElementById('result-container'),
-        json: '{{site.url}}/search.json'
+        json: 'search.json'
     })
 </script>
 
