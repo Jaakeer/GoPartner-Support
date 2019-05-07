@@ -20,7 +20,7 @@ description: Support
 logo: "assets/logo.ico"
 image: "assets/gopartner-icon.png"
 
-baseurl: "/GoPartner-Support" # the subpath of your site, e.g. /blog
+baseurl: "/GoPartner-Support/" # the subpath of your site, e.g. /blog
 url: "https://jaakeer.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 contact_us: "mailto:product@bizongo.com"
