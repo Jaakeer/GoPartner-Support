@@ -37,10 +37,10 @@ plugins:
 collections:
    projects:
       output: true
-      permalink: /:collection/:name
+
    faqs:
       output: true
-      permalink: /:collection/:name
+
 
 
 
