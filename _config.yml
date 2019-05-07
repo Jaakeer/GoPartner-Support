@@ -37,10 +37,10 @@ plugins:
 collections:
    projects:
       output: true
-      permalink: /:collection/:title
+      permalink: :collection/:title
    faqs:
       output: true
-      permalink: /:collection/:title
+      permalink: :collection/:title
 
 
 
@@ -54,6 +54,7 @@ defaults:
     values:
       layout: "page"
       author: "Jakir Hassan"
+      permalink: ":collection/:title"
   -
     scope:
       path: ""
@@ -61,6 +62,7 @@ defaults:
     values:
       layout: "article"
       author: "Jakir Hassan"
+      permalink: ":collection/:title"
 
 
 
