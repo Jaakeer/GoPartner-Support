@@ -17,8 +17,8 @@ title: GoPartner Support
 tool: GoPartner
 email: support@bizongo.com
 description: Support
-logo: "/assets/logo.ico"
-image: "/assets/gopartner-icon.png"
+logo: "GoPartner-Support/assets/logo.ico"
+image: "GoPartner-Support/assets/gopartner-icon.png"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jaakeer.github.io/GoPartner-Support/" # the base hostname & protocol for your site, e.g. http://example.com
