@@ -1,0 +1,67 @@
+<section class="banner">
+    <div class="banner_container">
+        <h1 class="banner_title">{{page.title | truncatewords: 10}}</h1>
+        <p class="banner_desc">
+            {{page.description}}
+        </p>
+    </div>
+
+
+    <div class="fs_menu hidden">
+        <a href="#" class="close_menu" aria-label="close">
+            <i class="ts_icon ts_icon_times ts_icon_inherit"></i>
+        </a>
+        <ul>
+            {% for item in site.projects %}
+            {% if page.url == item.url %}
+            <li class="selected"><a href="{{item.url}}">{{item.title}}</a>
+                <ul>
+                    {% for article in site.faqs %}
+                    {% if article.parent == item.title %}
+                    <li><a href="#{{article.id}}">{{article.title | truncatewords: 10}}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+                {% else %}
+            <li><a href="{{item.url}}">{{item.title}}</a>
+                {% endif %}
+                <ul>
+                    {% for article in site.faqs %}
+                    {% if article.parent == item.title %}
+                    <li><a href="{{item.url}}#{{article.title}}">{{article.title | truncatewords: 10}}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+
+    <div class="section_menu" id="global_menu">
+        <ul>
+            {% for item in site.projects %}
+            {% if page.url == item.url %}
+            <li class="selected"><a href="{{item.url}}">{{item.title}}</a>
+                <ul>
+                    {% for article in site.faqs %}
+                    {% if article.parent == item.title %}
+                    <li><a href="#{{article.id}}">{{article.title | truncatewords: 10}}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+                {% else %}
+            <li><a href="{{item.url}}">{{item.title}}</a>
+                {% endif %}
+                <ul>
+                    {% for article in site.faqs %}
+                        {% if article.parent == item.title %}
+                    <li><a href="{{item.url}}#{{article.title}}">{{article.title | truncatewords: 10}}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

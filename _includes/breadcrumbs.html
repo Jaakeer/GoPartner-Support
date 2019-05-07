@@ -1,0 +1,36 @@
+<div class="article_breadcrumbs">
+    <div class="article_breadcrumbs_container" style="visibility: visible;">
+
+        <ol class="breadcrumbs">
+            <li title="{{site.title}}">
+                <a href="/">Home</a>
+            </li>
+
+            {% if page.parent %}
+            <li title="{{page.parent}}">
+                <a href="{{parent.url}}">{{page.parent}}</a>
+            </li>
+            {% else %}
+            {% for item in site.faqs %}
+            {% if page.category == item.title %}
+            <li title="{{item.parent}}">
+                <a href="{{parent.url}}">{{item.parent}}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+
+            {% endif %}
+
+            {% if page.category %}
+            <li title="{{page.category}}">
+                <a href="{{category.url}}">{{page.category}}</a>
+            </li>
+            {% endif %}
+
+            <li title="{{page.title}}">
+                <a href="{{page.url}}">{{page.title | truncatewords: 06}}</a>
+            </li>
+        </ol>
+
+    </div>
+</div>

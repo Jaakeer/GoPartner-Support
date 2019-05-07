@@ -1,0 +1,110 @@
+{% include header.html %}
+
+
+<body class="">
+
+<header class="header">
+
+<!-- Header Logo -->
+	<div class="header_logo">
+
+      <a title="PartnerHub Support" class="logo_holder" href="/" data-clog-click="true" data-clog-ui-component="hc_header_nav" data-clog-ui-element="link_hc_home">
+         <img id="logo_w" src="{{site.image}}" alt="Icon Wide">
+         <img id="logo_b" src="{{site.image}}" alt="Icon Small">
+		</a>
+
+	</div>
+
+	<nav class="menu_nav">
+		<a href="#" class="open_search">Search</a>
+	</nav>
+
+
+
+
+<!-- Header navigation bar -->
+	<nav class="header_nav">
+		<a href="{{site.contact_us}}" class="contact-us" data-clog-click="true" data-clog-ui-component="hc_header_nav" data-clog-ui-element="btn_contact_us">Contact Us</a>
+	</nav>
+
+
+
+
+<!-- Hero Search bar here -->
+	<main role="main">
+
+	{% include search.html %}
+
+
+
+
+<!-- This is for the cards below banner -->
+		<section class="intro_cards">
+			<div class="intro_cards_container">
+		   {% for card in site.projects %}
+				<div class="intro_card_container">
+					<div class="card align_center">
+						<a data-clog-click="true" data-clog-ui-component="hc_primary_card" data-clog-ui-element="link_getting_started" href="{{card.url}}" class="tile" title="{{card.title}}">
+							<img class="card_image" border="0" src="{{card.image}}">
+							<h2 class="card_title">{{card.title}}</h2>
+							<p class="card_description">{{card.description}}</p>
+						</a>
+					</div>
+				</div>
+		   {% endfor %}
+		   </div>
+		</section>
+
+
+		<div class="hidden" id="highlighting_words">
+			<option value="highlighting">
+				how to, How to, Purchase Order, Quote, Shipment, timeline, partnerhub, rating, what is, partner, payment, payment, on hold, dispatch plan, logistics, transport, details
+			</option>
+		</div>
+
+		<div class="hidden" id="search_meta">
+			<option value="search_for">Search for "{term}"</option>
+			<option value="see_n_results">See {n}+ more results →</option>
+		</div>
+
+
+
+
+		{% include featured.html%}
+
+		<section class="separator">
+		</section>
+
+
+
+
+<!-- Tips and tricks cards -->
+		<section class="bizongo_tips">
+			<div class="bizongo_tips_container">
+				<h3 class="bizongo_tips_header">PartnerHub Tips</h3>
+				<ul class="bizongo_tips_list">
+					<li class="bizongo_tips_item">
+						<div class="bizongo_tips_item_content">
+							<div class="bizongo_tips_icon bizongo_tips_icon_switcher"></div>
+							<p>Use upcoming timelines on the bottom of the dashboard to track your schedule</p>
+						</div>
+					</li>
+					<li class="bizongo_tips_item">
+						<div class="bizongo_tips_item_content">
+							<div class="bizongo_tips_icon bizongo_tips_icon_search"></div>
+							<p>Keep your ratings high by using the PartnerHub platform for all tasks</p>
+						</div>
+					</li>
+					<li class="bizongo_tips_item">
+						<div class="bizongo_tips_item_content">
+							<div class="bizongo_tips_icon bizongo_tips_icon_up_arrow"></div>
+							<p>Reviewing past quotes give you insight about market rates</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+<!--tips and tricks end here -->
+
+	</main>
+</body>

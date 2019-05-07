@@ -1,0 +1,63 @@
+{% include header.html %}
+
+
+
+<body class="" data-gr-c-s-loaded="true">
+{% include inside-header.html%}
+
+<main role="main">
+{% include navbar.html %}
+
+    <div class="article_page has_sidenav">
+
+{% include breadcrumbs.html %}
+
+
+<!-- Article container here -->
+        {% for article in site.faqs %}
+        <div class="article_container">
+            <div class="content_col">
+                {% if article.parent == "Getting Started" %}
+                <a class="biz_anchor" name="{{article.title}}"></a>
+                <h3 class="article_title" prettyslug="{{article.slug}}" data-id="{{article.id}}">
+                    {{article.title}}
+                </h3>
+
+                <div class="article_body">
+                    {{article.content | markdownify}}
+                </div>
+                {% endif %}
+
+            </div>
+        </div><!-- end content_col -->
+
+
+        <!-- Side accordian -->
+        <div class="category_list" id="nav_holder">
+            <ul class="section-list" id="nav_list">
+                {% include related.html %}
+                <div class="close"></div>
+            </ul>
+        {% endfor %}
+
+    </div>
+</main>
+
+
+
+<div class="purple_banner hidden">
+    <div class="first_row">
+        <i class="wave"></i>
+        <b>Brand new to PartnerHub?</b>
+        <span>Check out these helpful guides.</span>
+    </div>
+
+    <div class="second_row">
+        <a class="btn" href="/getting-started/" target="_blank">Getting Started</a>
+        <a class="btn" href="/hc/en-us/articles/213817348-Slack-glossary">PartnerHub Glossary</a>
+    </div>
+
+    <button class="close_purple ts_icon ts_icon_times"></button>
+</div>
+
+</body>

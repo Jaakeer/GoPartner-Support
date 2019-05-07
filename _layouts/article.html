@@ -1,0 +1,84 @@
+{% include header.html %}
+
+<body class="" data-gr-c-s-loaded="true">
+
+{% include inside-header.html%}
+
+<main role="main">
+
+    {% include navbar.html %}
+
+<div class="article_page has_sidenav">
+
+{% include breadcrumbs.html %}
+
+    <div class="article_container">
+        <div class="info-card">
+        <div class="content_col">
+            <h3 class="article_title">
+                {{page.title}}
+            </h3>
+            <div class="article_body">
+                {{content}}
+            </div>
+        </div>
+        </div>
+
+        <!-- Side accordian -->
+
+        <div class="category_list" id="nav_holder">
+            <ul class="section-list" id="nav_list">
+                {% for n in page.nav %}
+                <li><a href="{{ n.permalink }}" class="active" prettyslug="{{ n.prettyslug }}">{{ n.page }}</a></li>
+                {% endfor %}
+                <div class="close">
+
+                </div>
+            </ul>
+
+            <ul class="section-list" id="cat_list">
+                <div class="close">
+
+                </div>
+                {% for item in site.projects %}
+                {% if page.url == item.url %}
+                <li class="selected"><a href="{{item.url}}">{{item.title}}</a>
+                    {% else %}
+                <li><a href="{{item.url}}">{{item.title}}</a>
+                    {% endif %}
+                    <ul>
+                        {% for article in site.articles %}
+                        {% if article.tags contains "getting started" %}
+                        <li><a href="{{article.url}}">{{article.title}}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+
+
+<!-- Related articles start here -->
+    <div class="article_bottom">
+        <a name="related" class="related"></a>
+        <div class="article_related">
+            <h3>Related Articles</h3>
+
+            {% include related.html %}
+
+        </div>
+    </div>
+
+
+
+
+
+</div>
+</main>
+
+
+
+</body>

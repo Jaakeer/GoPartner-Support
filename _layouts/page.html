@@ -1,0 +1,70 @@
+{% include header.html %}
+
+<body class="" data-gr-c-s-loaded="true">
+{% include inside-header.html%}
+
+<main role="main">
+
+{% include navbar.html %}
+
+
+<div class="hidden" id="highlighting_words">
+	<option value="highlighting">
+what is, partnerhub, order, how to, How to, Purchase Order, Quote, Shipment, timeline, partnerhub, rating, what is, partner, payment, payment, on hold, dispatch plan, logistics, transport, details
+    </option>
+</div>
+
+
+{% for item in site.projects %}
+    {% if item.url== page.url %}
+<div class="category_page">
+	<div class="loc_banner_container">
+
+    </div>
+
+	<div class="category_container">
+        <div class="category_trees">
+            <div class="section-tree-with-article" data-asynchtml="">
+                <ul>
+                    {% for article in site.faqs %}
+                    {% if article.parent == item.title %}
+                    <li class="section" id="{{article.id}}"><a class="biz_anchor" name="{{article.title}}"></a>
+                      <h3 title="{{article.title}}" prettyslug="{{article.slug}}" data-id="{{article.id}}">{{article.title}}</h3>
+                        {% for post in site.faqs %}
+                        <ul class="article-list">
+                            {% if post.category == article.title %}
+                                {% if post.tag == "featured" %}
+                                <li  class="article-promoted">
+                                    <span data-title="Promoted article">★</span>
+                                    <a href="{{post.url}}" aria-selected="false" data-asynchtml-resource="">{{post.title | truncatewords: 10}}</a>
+                                    <article class="article-body" data-asynchtml-target="">
+                                        <div class="loader"></div>
+                                    </article>
+                                </li>
+
+                                {% else %}
+
+                                <li>
+                                    <a href="{{post.url}}" aria-selected="false" data-asynchtml-resource="">{{post.title | truncatewords: 10}}</a>
+                                    <article class="article-body" data-asynchtml-target="">
+                                        <div class="loader"></div>
+                                    </article>
+                                </li>
+                                {% endif %}
+                            {% endif %}
+                        </ul>
+                        {% endfor %}
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+	</div>
+</div>
+    {%endif%}
+    {%endfor%}
+</main>
+
+</body>
+

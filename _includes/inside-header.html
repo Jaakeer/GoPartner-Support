@@ -1,0 +1,41 @@
+<header class="header header_white category_header">
+	<div class="header_logo">
+		<a title="{{site.title}}" class="logo_holder" href="/" data-clog-click="true" data-clog-ui-component="hc_header_nav" data-clog-ui-element="link_hc_home">
+			<img id="logo_w" src="{{site.image}}" alt="Image Wide">
+			<img id="logo_b" src="{{site.image}}" alt="Image Small">
+		</a>
+
+		<a href="/" class="header_title">{{site.description}}</a>
+	</div>
+
+
+	<nav class="menu_nav">
+		<a href="#" class="open_search">&nbsp;</a>
+	</nav>
+
+	<nav class="header_nav">
+		<div class="header_search">
+			<form class="search" data-clog-ui-component="hc_header_nav" accept-charset="UTF-8" action="/search-results" method="get" role="search">
+				<input id="query" name="query" title="Search for questions" placeholder="Search for questions .." type="search">
+			</form>
+			<ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="results-container"></ul>
+		</div>
+
+	</nav>
+
+
+	<!-- Script pointing to search-script.js -->
+	<script src="/assets/js/search.js" type="text/javascript"></script>
+
+	<!-- Configuration -->
+	<script>
+		SimpleJekyllSearch({
+			searchInput: document.getElementById('query'),
+			resultsContainer: document.getElementById('results-container'),
+			json: '/search.json'
+		})
+	</script>
+
+
+	<i class="hidden ts_icon ts_icon_times_circle ts_icon_inherit close_search"></i>
+</header>

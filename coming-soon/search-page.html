@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+{% include header.html %}
+<body class="">
+{% include inside-header.html %}
+{% include navbar.html %}
+
+<main role="main">
+
+    <div class="hidden" id="search_meta">
+        <option value="search_for">Search for "{term}"</option>
+        <option value="see_n_results">See {n}+ more results →</option>
+    </div>
+
+    <section class="banner banner_search_results">
+        <div class="banner_container">
+
+            <h1 class="search-results-heading">
+                <span class="hidden query_val">slack</span>
+                <span class="hidden count_val">271</span>
+                <span class="invisible search_result">{num} results found for “{term}”</span>
+            </h1>
+
+            {% include search.html %}
+
+            {% include navbar.html %}
+        </div>
+    </section>
+
+    <div class="loc_banner_container"></div>
+
+    <div class="search_page category_list" id="nav_holder">
+        <ul class="section-list" id="cat_list">
+        </ul>
+    </div>
+
+    <section class="search_results">
+        <div class="search_results_container">
+            <section class="search-results-column">
+
+                <ul class="search-results-list">
+                    {% for article in site.faqs %}
+
+
+                    <li class="search-result">
+                        <a href="/hc/en-us/search/click?data=BAh7CjoHaWRpBJRvAAw6CXR5cGVJIgxhcnRpY2xlBjoGRVQ6CHVybEkiPy9oYy9lbi11cy9hcnRpY2xlcy8yMDEzNTUxNTYtR3VpZGUtdG8tU2xhY2stbm90aWZpY2F0aW9ucy0GOwdUOg5zZWFyY2hfaWRJIik3NzZlZDI2Ny01ZWI5LTQ4NzYtOGE4OC03NmU0N2ExYzAyY2YGOwdGOglyYW5raQY%3D--b558a132a029bf3f32cebf49e504c083fc94267e" class="search-result-link">Guide to Slack notifications </a>
+                        <div class="search-result-meta">by Emilie O. <time datetime="2014-01-26T21:47:01Z" title="2014-01-26T21:47:01Z" data-datetime="relative">January 26, 2014 21:47</time> in <a href="https://get.slack.help/hc/en-us/categories/360000047906-Your-Profile-Preferences">Your Profile &amp; Preferences</a> > <a href="https://get.slack.help/hc/en-us/sections/360000110243-Adjust-your-notifications">Adjust your notifications</a></div>
+                        <div class="search-result-description">Under Notify me about, choose which activity <em>Slack</em> notifies you of.</div>
+                    </li>
+
+                    <li class="search-result">
+                        <a href="/hc/en-us/search/click?data=BAh7CjoHaWRpBASYvgw6CXR5cGVJIgxhcnRpY2xlBjoGRVQ6CHVybEkiMC9oYy9lbi11cy9hcnRpY2xlcy8yMTM4MTczNDgtU2xhY2stZ2xvc3NhcnkGOwdUOg5zZWFyY2hfaWRJIik3NzZlZDI2Ny01ZWI5LTQ4NzYtOGE4OC03NmU0N2ExYzAyY2YGOwdGOglyYW5raQc%3D--8de76bec099f8060854f1f1d10781dbda711d9d7" class="search-result-link">Slack glossary</a>
+                        <div class="search-result-meta">by Emilie O. <time datetime="2015-11-19T00:45:31Z" title="2015-11-19T00:45:31Z" data-datetime="relative">November 19, 2015 00:45</time> in <a href="https://get.slack.help/hc/en-us/categories/360000049043-Getting-Started">Getting Started</a> > <a href="https://get.slack.help/hc/en-us/sections/360000110083-Intro-to-Slack">Intro to Slack</a></div>
+                        <div class="search-result-description"><em>Slack</em> Foundry An interactive training app built by <em>Slack</em>. </div>
+                    </li>
+
+                    <li class="search-result">
+                        <a href="/hc/en-us/search/click?data=BAh7CjoHaWRsKwjZkajSUwA6CXR5cGVJIgxhcnRpY2xlBjoGRVQ6CHVybEkiOy9oYy9lbi11cy9hcnRpY2xlcy8zNjAwMTY1NDgzMTMtQWJvdXQtU2xhY2stcy1mZWF0dXJlcwY7B1Q6DnNlYXJjaF9pZEkiKTc3NmVkMjY3LTVlYjktNDg3Ni04YTg4LTc2ZTQ3YTFjMDJjZgY7B0Y6CXJhbmtpCA%3D%3D--74538abc9050f0634cbc65c160046a9b69d63033" class="search-result-link">About Slack&#39;s features</a>
+                        <div class="search-result-meta">by Cormac <time datetime="2019-01-31T16:06:10Z" title="2019-01-31T16:06:10Z" data-datetime="relative">January 31, 2019 16:06</time> in <a href="https://get.slack.help/hc/en-us/categories/360000049043-Getting-Started">Getting Started</a> > <a href="https://get.slack.help/hc/en-us/sections/360000110083-Intro-to-Slack">Intro to Slack</a></div>
+                        <div class="search-result-description">Ready to get to know <em>Slack</em> like the back of your hand?</div>
+                    </li>
+
+                    <li class="search-result">
+                        <a href="/hc/en-us/search/click?data=BAh7CjoHaWRpBGC4BQ06CXR5cGVJIgxhcnRpY2xlBjoGRVQ6CHVybEkiNi9oYy9lbi11cy9hcnRpY2xlcy8yMTg0Nzg2ODgtU2xhY2stZm9yLWV4ZWN1dGl2ZXMGOwdUOg5zZWFyY2hfaWRJIik3NzZlZDI2Ny01ZWI5LTQ4NzYtOGE4OC03NmU0N2ExYzAyY2YGOwdGOglyYW5raQk%3D--20c1a81aef8dc05d74de22cf3c5a6db4dc42dc35" class="search-result-link">Slack for executives</a>
+                        <div class="search-result-meta">by Mari Ju <time datetime="2016-04-26T18:06:05Z" title="2016-04-26T18:06:05Z" data-datetime="relative">April 26, 2016 18:06</time> in <a href="https://get.slack.help/hc/en-us/categories/360000049063-Tips-Tricks-More">Tips, Tricks &amp; More</a> > <a href="https://get.slack.help/hc/en-us/sections/360000110403-Role-based-handbooks">Role-based handbooks</a></div>
+                        <div class="search-result-description">💡  View tips for reducing noise in <em>Slack</em>.</div>
+                    </li>
+
+                    <li class="search-result">
+                        <a href="/hc/en-us/search/click?data=BAh7CjoHaWRpBCpnOAw6CXR5cGVJIgxhcnRpY2xlBjoGRVQ6CHVybEkiLy9oYy9lbi11cy9hcnRpY2xlcy8yMDUwMjMwMTgtQm94LWZvci1TbGFjawY7B1Q6DnNlYXJjaF9pZEkiKTc3NmVkMjY3LTVlYjktNDg3Ni04YTg4LTc2ZTQ3YTFjMDJjZgY7B0Y6CXJhbmtpCg%3D%3D--8d77938bfba0c772e7ddb6223fd743d6a9bca6a8" class="search-result-link">Box for Slack</a>
+                        <div class="search-result-meta">by Lane Collins <time datetime="2015-04-28T03:41:54Z" title="2015-04-28T03:41:54Z" data-datetime="relative">April 28, 2015 03:41</time> in <a href="https://get.slack.help/hc/en-us/categories/360000047926-Add-Tools-to-Your-Workspace">Add Tools to Your Workspace</a> > <a href="https://get.slack.help/hc/en-us/sections/360000110263-Connect-apps-services">Connect apps &amp; services</a></div>
+                        <div class="search-result-description">Paste a link to the file in the <em>Slack</em> message box.</div>
+                    </li>
+
+                    <li class="search-result">
+                        <a href="/hc/en-us/search/click?data=BAh7CjoHaWRpBC5cDA06CXR5cGVJIgxhcnRpY2xlBjoGRVQ6CHVybEkiMS9oYy9lbi11cy9hcnRpY2xlcy8yMTg5MTM4MzgtU2xhY2stZm9yLXNhbGVzBjsHVDoOc2VhcmNoX2lkSSIpNzc2ZWQyNjctNWViOS00ODc2LThhODgtNzZlNDdhMWMwMmNmBjsHRjoJcmFua2kL--33c5691ff9b9286a8e944db6917cb64f763f1f53" class="search-result-link">Slack for sales</a>
+                        <div class="search-result-meta">by Mari Ju <time datetime="2016-05-10T16:27:47Z" title="2016-05-10T16:27:47Z" data-datetime="relative">May 10, 2016 16:27</time> in <a href="https://get.slack.help/hc/en-us/categories/360000049063-Tips-Tricks-More">Tips, Tricks &amp; More</a> > <a href="https://get.slack.help/hc/en-us/sections/360000110403-Role-based-handbooks">Role-based handbooks</a></div>
+                        <div class="search-result-description">Automatically get sales data and alerts in <em>Slack</em>.</div>
+                    </li>
+
+                    <li class="search-result">
+                        <a href="/hc/en-us/search/click?data=BAh7CjoHaWRpBCB12A06CXR5cGVJIgxhcnRpY2xlBjoGRVQ6CHVybEkiMi9oYy9lbi11cy9hcnRpY2xlcy8yMzIyODk1NjgtR2l0SHViLWZvci1TbGFjawY7B1Q6DnNlYXJjaF9pZEkiKTc3NmVkMjY3LTVlYjktNDg3Ni04YTg4LTc2ZTQ3YTFjMDJjZgY7B0Y6CXJhbmtpDA%3D%3D--b5c93438d530281b49b0381e6afd1ae38811f65d" class="search-result-link">GitHub for Slack</a>
+                        <div class="search-result-meta">by Kathryn Mena <time datetime="2016-11-08T19:57:57Z" title="2016-11-08T19:57:57Z" data-datetime="relative">November 08, 2016 19:57</time> in <a href="https://get.slack.help/hc/en-us/categories/360000047926-Add-Tools-to-Your-Workspace">Add Tools to Your Workspace</a> > <a href="https://get.slack.help/hc/en-us/sections/360000110263-Connect-apps-services">Connect apps &amp; services</a></div>
+                        <div class="search-result-description">When you connect GitHub to <em>Slack</em>, you can get notified of all sorts of events in the <em>Slack</em> channel(s) of your choosing.</div>
+                    </li>
+
+                    <li class="search-result">
+                        <a href="/hc/en-us/search/click?data=BAh7CjoHaWRpBJuK0w06CXR5cGVJIgxhcnRpY2xlBjoGRVQ6CHVybEkiMi9oYy9lbi11cy9hcnRpY2xlcy8yMzE5NjczODctVHJlbGxvLWZvci1TbGFjawY7B1Q6DnNlYXJjaF9pZEkiKTc3NmVkMjY3LTVlYjktNDg3Ni04YTg4LTc2ZTQ3YTFjMDJjZgY7B0Y6CXJhbmtpDQ%3D%3D--e348980b20b762c82a33d78e596e8b3640d002ae" class="search-result-link">Trello for Slack</a>
+                        <div class="search-result-meta">by Kathryn Mena <time datetime="2016-11-07T20:12:27Z" title="2016-11-07T20:12:27Z" data-datetime="relative">November 07, 2016 20:12</time> in <a href="https://get.slack.help/hc/en-us/categories/360000047926-Add-Tools-to-Your-Workspace">Add Tools to Your Workspace</a> > <a href="https://get.slack.help/hc/en-us/sections/360000110263-Connect-apps-services">Connect apps &amp; services</a></div>
+                        <div class="search-result-description">Select a Trello team to link to <em>Slack</em>.</div>
+                    </li>
+
+                    <li class="search-result">
+                        <a href="/hc/en-us/search/click?data=BAh7CjoHaWRpBMFrLgw6CXR5cGVJIgxhcnRpY2xlBjoGRVQ6CHVybEkiNi9oYy9lbi11cy9hcnRpY2xlcy8yMDQzNjg4MzMtU2xhY2stZm9yLU5vbnByb2ZpdHMGOwdUOg5zZWFyY2hfaWRJIik3NzZlZDI2Ny01ZWI5LTQ4NzYtOGE4OC03NmU0N2ExYzAyY2YGOwdGOglyYW5raQ4%3D--8641e7d1621ccbfcd2ffa8db03a8ec226aa61aac" class="search-result-link">Slack for Nonprofits</a>
+                        <div class="search-result-meta">by Jamie Rosenfield <time datetime="2014-12-10T23:18:51Z" title="2014-12-10T23:18:51Z" data-datetime="relative">December 10, 2014 23:18</time> in <a href="https://get.slack.help/hc/en-us/categories/200122103-Workspace-Administration">Workspace Administration</a> > <a href="https://get.slack.help/hc/en-us/sections/360000111266-Manage-billing-payments-plans">Manage billing, payments &amp; plans</a></div>
+                        <div class="search-result-description">When you’re ready, fill out the <em>Slack</em> for Nonprofits application form.</div>
+                    </li>
+
+                    <li class="search-result">
+                        <a href="/hc/en-us/search/click?data=BAh7CjoHaWRsKwjCU8PGGgA6CXR5cGVJIgxhcnRpY2xlBjoGRVQ6CHVybEkiOi9oYy9lbi11cy9hcnRpY2xlcy8xMTUwMDM4Mzk0MjYtU2xhY2stZm9yLXJlY3J1aXRtZW50BjsHVDoOc2VhcmNoX2lkSSIpNzc2ZWQyNjctNWViOS00ODc2LThhODgtNzZlNDdhMWMwMmNmBjsHRjoJcmFua2kP--4cb102dfc168965b6cfbd59b3a789af7835aebfc" class="search-result-link">Slack for recruitment</a>
+                        <div class="search-result-meta">by Lauren Paul <time datetime="2017-08-01T22:08:54Z" title="2017-08-01T22:08:54Z" data-datetime="relative">August 01, 2017 22:08</time> in <a href="https://get.slack.help/hc/en-us/categories/360000049063-Tips-Tricks-More">Tips, Tricks &amp; More</a> > <a href="https://get.slack.help/hc/en-us/sections/360000110403-Role-based-handbooks">Role-based handbooks</a></div>
+                        <div class="search-result-description">💡 Learn  how HR teams can use <em>Slack</em>  for new hire on-boarding.</div>
+                    </li>
+
+                    {% endfor %}
+
+                </ul>
+
+            </section>
+        </div>
+    </section>
+
+    <section class="pagination">
+        <div class="pagination_container">
+            <nav class="pagination">
+                <ul>
+
+
+
+
+                    <li class="pagination-current">
+                        <span>1</span>
+                    </li>
+
+
+
+                    <li>
+                        <a href="/hc/en-us/search?commit=Search&amp;page=2&amp;query=slack&amp;utf8=%E2%9C%93#results"  rel="next">2</a>
+                    </li>
+
+
+
+                    <li>
+                        <a href="/hc/en-us/search?commit=Search&amp;page=3&amp;query=slack&amp;utf8=%E2%9C%93#results"  >3</a>
+                    </li>
+
+
+
+                    <li>
+                        <a href="/hc/en-us/search?commit=Search&amp;page=4&amp;query=slack&amp;utf8=%E2%9C%93#results"  >4</a>
+                    </li>
+
+
+
+                    <li>
+                        <a href="/hc/en-us/search?commit=Search&amp;page=5&amp;query=slack&amp;utf8=%E2%9C%93#results"  >5</a>
+                    </li>
+
+
+
+                    <li>
+                        <a href="/hc/en-us/search?commit=Search&amp;page=6&amp;query=slack&amp;utf8=%E2%9C%93#results"  >6</a>
+                    </li>
+
+
+
+
+                    <li class="pagination-next">
+                        <a href="/hc/en-us/search?commit=Search&amp;page=2&amp;query=slack&amp;utf8=%E2%9C%93#results" rel="next">›</a>
+                    </li>
+
+                    <li class="pagination-last">
+                        <a href="/hc/en-us/search?commit=Search&amp;page=28&amp;query=slack&amp;utf8=%E2%9C%93#results">»</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+</body>
+</html>

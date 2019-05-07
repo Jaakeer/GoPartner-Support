@@ -1,0 +1,621 @@
+[
+  
+    {
+      "title"    : "Dispatch Plans",
+      "tags"     : "",
+      "url"      : "/dispatch-plans"
+    } ,
+  
+    {
+      "title"    : "Login",
+      "tags"     : "getting started, login, password, sign in",
+      "url"      : "/Login"
+    } ,
+  
+    {
+      "title"    : "Can I update a timeline?",
+      "tags"     : "timelines, dispatch plan, update, general",
+      "url"      : "/can-i-update-timeline"
+    } ,
+  
+    {
+      "title"    : "How can I confirm a timeline?",
+      "tags"     : "timeline, dispatch plan, ongoing po, general",
+      "url"      : "/how-can-i-update-timeline"
+    } ,
+  
+    {
+      "title"    : "I do not have a website; can I still work with Bizongo?",
+      "tags"     : "website, getting started",
+      "url"      : "/i-do-not-have-a-website"
+    } ,
+  
+    {
+      "title"    : "What is an upcoming timeline?",
+      "tags"     : "",
+      "url"      : "/upcoming-timeline"
+    } ,
+  
+    {
+      "title"    : "What is PartnerHub Dashboard?",
+      "tags"     : "",
+      "url"      : "/what-is-dashboard"
+    } ,
+  
+    {
+      "title"    : "Where is PartnerPlus?",
+      "tags"     : "",
+      "url"      : "/where-is-partnerplus"
+    } ,
+  
+    {
+      "title"    : "Who can work with Bizongo?",
+      "tags"     : "",
+      "url"      : "/who-can-work-with-bizongo/"
+    } ,
+  
+    {
+      "title"    : "Partners",
+      "tags"     : "",
+      "url"      : "/partners"
+    } ,
+  
+    {
+      "title"    : "Payments",
+      "tags"     : "",
+      "url"      : "/payments"
+    } ,
+  
+    {
+      "title"    : "Payment terms at Bizongo",
+      "tags"     : "getting started, payment, settlements, settlement, pay, on hold",
+      "url"      : "/5payment"
+    } ,
+  
+    {
+      "title"    : "Where are all my invoices?",
+      "tags"     : "",
+      "url"      : "/all-invoices"
+    } ,
+  
+    {
+      "title"    : "How do I clear on hold payments?",
+      "tags"     : "featured",
+      "url"      : "/clear-onhold"
+    } ,
+  
+    {
+      "title"    : "What is a credit note?",
+      "tags"     : "",
+      "url"      : "/creditnote"
+    } ,
+  
+    {
+      "title"    : "I want to see the details of Under review payments",
+      "tags"     : "",
+      "url"      : "/details-for-under-review"
+    } ,
+  
+    {
+      "title"    : "Can I see the details of payment “on hold”?",
+      "tags"     : "featured",
+      "url"      : "/details-onhold"
+    } ,
+  
+    {
+      "title"    : "Where can I find all the Pending payments?",
+      "tags"     : "",
+      "url"      : "/find-all-payment"
+    } ,
+  
+    {
+      "title"    : "If my purchase order is going in batches, how many invoices will be created?",
+      "tags"     : "",
+      "url"      : "/how-many-invoices"
+    } ,
+  
+    {
+      "title"    : "How would I know about a due credit note?",
+      "tags"     : "",
+      "url"      : "/how-to-know-about-credit-note"
+    } ,
+  
+    {
+      "title"    : "Why is my payment “On Hold”?",
+      "tags"     : "featured",
+      "url"      : "/onhold"
+    } ,
+  
+    {
+      "title"    : "What is partial payment?",
+      "tags"     : "",
+      "url"      : "/partial-payemnt"
+    } ,
+  
+    {
+      "title"    : "Why is my payment still pending?",
+      "tags"     : "",
+      "url"      : "/payment-pending"
+    } ,
+  
+    {
+      "title"    : "Where can I find my total dues?",
+      "tags"     : "",
+      "url"      : "/total-dues"
+    } ,
+  
+    {
+      "title"    : "What is Settlement?",
+      "tags"     : "",
+      "url"      : "/what-is-settlement"
+    } ,
+  
+    {
+      "title"    : "When is credit note issued?",
+      "tags"     : "featured",
+      "url"      : "/when-credit-note"
+    } ,
+  
+    {
+      "title"    : "When will I receive my payment, once I accept the order?",
+      "tags"     : "",
+      "url"      : "/when-will-i-recieve-payment"
+    } ,
+  
+    {
+      "title"    : "Why are my payments “Under Review”?",
+      "tags"     : "",
+      "url"      : "/why-under-review"
+    } ,
+  
+    {
+      "title"    : "Where will I find all team members?",
+      "tags"     : "team, member",
+      "url"      : "/add-member"
+    } ,
+  
+    {
+      "title"    : "How can I change my password?",
+      "tags"     : "",
+      "url"      : "/change-password"
+    } ,
+  
+    {
+      "title"    : "How can I change my company details?",
+      "tags"     : "",
+      "url"      : "/change-company-details"
+    } ,
+  
+    {
+      "title"    : "Can I re add someone in my team.",
+      "tags"     : "",
+      "url"      : "/readd"
+    } ,
+  
+    {
+      "title"    : "Can I remove a team member?",
+      "tags"     : "",
+      "url"      : "/rmeove-member"
+    } ,
+  
+    {
+      "title"    : "How can I change my statutory details?",
+      "tags"     : "banking, banking details",
+      "url"      : "/statutory"
+    } ,
+  
+    {
+      "title"    : "Who can operate PartnerHub?",
+      "tags"     : "teams, add member, member",
+      "url"      : "/who-can-operate"
+    } ,
+  
+    {
+      "title"    : "Whom should I add in my team?",
+      "tags"     : "",
+      "url"      : "/who-should-i-add"
+    } ,
+  
+    {
+      "title"    : "So you got your first Purchase Order",
+      "tags"     : "getting started, featured, po, purhcase order, order, new po",
+      "url"      : "/first-po/"
+    } ,
+  
+    {
+      "title"    : "How do I accept a new order?",
+      "tags"     : "featured",
+      "url"      : "/accept-new-order"
+    } ,
+  
+    {
+      "title"    : "What is the criteria Bizongo compares my quotes against other?",
+      "tags"     : "",
+      "url"      : "/criteria-for-order"
+    } ,
+  
+    {
+      "title"    : "What date do I put in dispatch plan?",
+      "tags"     : "fetaured",
+      "url"      : "/date-for-dispatchplan"
+    } ,
+  
+    {
+      "title"    : "I denied a purchase order by mistake",
+      "tags"     : "",
+      "url"      : "/denied-order-by-mistake"
+    } ,
+  
+    {
+      "title"    : "I am an existing Partner, and I am not getting orders as frequently as I used to",
+      "tags"     : "featured",
+      "url"      : "/I-am-an-existing-partner-/."
+    } ,
+  
+    {
+      "title"    : "Is it mandatory to fill in timeline dates prior to accepting PO?",
+      "tags"     : "",
+      "url"      : "/mandatory-to-fill-timeline"
+    } ,
+  
+    {
+      "title"    : "I am a new partner and I am not getting orders as frequently as I would like",
+      "tags"     : "",
+      "url"      : "/new-partner-order"
+    } ,
+  
+    {
+      "title"    : "What does a new Purchase order include?",
+      "tags"     : "featured",
+      "url"      : "/new-po-include"
+    } ,
+  
+    {
+      "title"    : "What if I am not comfortable with the dispatch and delivery dates?",
+      "tags"     : "",
+      "url"      : "/not-comfortable-qith-timeline"
+    } ,
+  
+    {
+      "title"    : "How do I know I have reached the timeline?",
+      "tags"     : "",
+      "url"      : "/realise-reached-timeline"
+    } ,
+  
+    {
+      "title"    : "What does the rating depend on?",
+      "tags"     : "",
+      "url"      : "/what-does-rating-depend-on"
+    } ,
+  
+    {
+      "title"    : "What is new order?",
+      "tags"     : "",
+      "url"      : "/what-is-neworder"
+    } ,
+  
+    {
+      "title"    : "What is production start date?",
+      "tags"     : "",
+      "url"      : "/what-is-productionstart-date"
+    } ,
+  
+    {
+      "title"    : "What is Raw material Procurement?",
+      "tags"     : "",
+      "url"      : "/what-is-raw-material-procurement"
+    } ,
+  
+    {
+      "title"    : "Where is the order I accepted?",
+      "tags"     : "",
+      "url"      : "/where-is-accepted-order"
+    } ,
+  
+    {
+      "title"    : "Purchase Requisition",
+      "tags"     : "",
+      "url"      : "/purchase-requisition"
+    } ,
+  
+    {
+      "title"    : "Let’s get you started with Purchase Requisition",
+      "tags"     : "getting started, pr, negotiation, purchase requisition, scheduling",
+      "url"      : "/how-pr-works"
+    } ,
+  
+    {
+      "title"    : "What is a purchase requisition?",
+      "tags"     : "",
+      "url"      : "/what-is-pr"
+    } ,
+  
+    {
+      "title"    : "Why did Bizongo reject my Quote?",
+      "tags"     : "",
+      "url"      : "/bizongo-rejected-quote"
+    } ,
+  
+    {
+      "title"    : "What details do I need for giving/updating a quote?",
+      "tags"     : "",
+      "url"      : "/details-for-quote"
+    } ,
+  
+    {
+      "title"    : "I won a quote but I did not get an order; in what case I do not get an order?",
+      "tags"     : "",
+      "url"      : "/did-not-get-order"
+    } ,
+  
+    {
+      "title"    : "Do I need to include taxes in my quoted price?",
+      "tags"     : "",
+      "url"      : "/do-i-need-tx-for-quote"
+    } ,
+  
+    {
+      "title"    : "Can I edit a given quote?",
+      "tags"     : "",
+      "url"      : "/edit-a-given-quote"
+    } ,
+  
+    {
+      "title"    : "Where can I find new quotes?",
+      "tags"     : "",
+      "url"      : "/find-new-quotes"
+    } ,
+  
+    {
+      "title"    : "How can I edit my quote?",
+      "tags"     : "",
+      "url"      : "/how-can-edit-quote"
+    } ,
+  
+    {
+      "title"    : "How many quotes will I get once I register?",
+      "tags"     : "",
+      "url"      : "/how-many-quotes"
+    } ,
+  
+    {
+      "title"    : "How can I improve my chances to win a quote?",
+      "tags"     : "",
+      "url"      : "/improve-chances-quote"
+    } ,
+  
+    {
+      "title"    : "Is the delivery cost mandatory?",
+      "tags"     : "",
+      "url"      : "/is-delivery-cost-mandatory"
+    } ,
+  
+    {
+      "title"    : "If I lose a quote, does that mean I will not get any order.",
+      "tags"     : "",
+      "url"      : "/lose-quote"
+    } ,
+  
+    {
+      "title"    : "My quote was accepted; does that mean I have an order?",
+      "tags"     : "",
+      "url"      : "/quote-mean-order"
+    } ,
+  
+    {
+      "title"    : "How can I see specific quotes?",
+      "tags"     : "",
+      "url"      : "/see-specific-quotes"
+    } ,
+  
+    {
+      "title"    : "What are quotes?",
+      "tags"     : "",
+      "url"      : "/what-are-quotes"
+    } ,
+  
+    {
+      "title"    : "What happens to my submitted quote?",
+      "tags"     : "",
+      "url"      : "/what-happens-to-quotes"
+    } ,
+  
+    {
+      "title"    : "Where Can I Find Quotes",
+      "tags"     : "",
+      "url"      : "/where-can-i-find-quotes"
+    } ,
+  
+    {
+      "title"    : "All about your ratings",
+      "tags"     : "getting started, featured, rating, improve, more orders, business",
+      "url"      : "/6rating"
+    } ,
+  
+    {
+      "title"    : "How do you calculate rating?",
+      "tags"     : "",
+      "url"      : "/how-rating"
+    } ,
+  
+    {
+      "title"    : "How can I improve my Partner rating?",
+      "tags"     : "featured",
+      "url"      : "/how-to-improve-ratings"
+    } ,
+  
+    {
+      "title"    : "How does the rating help me?",
+      "tags"     : "featured",
+      "url"      : "/howdoes-rating-help-me"
+    } ,
+  
+    {
+      "title"    : "What is Dispatch Adherence?",
+      "tags"     : "",
+      "url"      : "/what-is-dispatch-adherence"
+    } ,
+  
+    {
+      "title"    : "What is Quality Adherence?",
+      "tags"     : "",
+      "url"      : "/what-is-qc"
+    } ,
+  
+    {
+      "title"    : "What is Partner Rating?",
+      "tags"     : "",
+      "url"      : "/whatis-rating"
+    } ,
+  
+    {
+      "title"    : "Request for Quotes",
+      "tags"     : "",
+      "url"      : "/request-for-quotes"
+    } ,
+  
+    {
+      "title"    : "Let’s get you started with Quotes",
+      "tags"     : "getting started, quote, quotes, bids, bid, earn po",
+      "url"      : "/how-to-request-for-quotes"
+    } ,
+  
+    {
+      "title"    : "Ready to dispatch?",
+      "tags"     : "getting started, featured, shipment, dispatch, delivery, invoice, upload invoice, transport, logistics, logistic, e way bill",
+      "url"      : "/Ready-to-dispatch"
+    } ,
+  
+    {
+      "title"    : "How can a SLA breach affect me?",
+      "tags"     : "",
+      "url"      : "/affect-sla-breach"
+    } ,
+  
+    {
+      "title"    : "How does a timeline breach affect me?",
+      "tags"     : "",
+      "url"      : "/affect-timeline-breach"
+    } ,
+  
+    {
+      "title"    : "In what cases the mismatched quantity is approved?",
+      "tags"     : "",
+      "url"      : "/approved-mismatch"
+    } ,
+  
+    {
+      "title"    : "Can I dispatch more than the requirement?",
+      "tags"     : "",
+      "url"      : "/dispathc-more"
+    } ,
+  
+    {
+      "title"    : "How do I give you the transport details?",
+      "tags"     : "",
+      "url"      : "/give-transport-details"
+    } ,
+  
+    {
+      "title"    : "How does failing QC affect me?",
+      "tags"     : "",
+      "url"      : "/how-qc-affect-me"
+    } ,
+  
+    {
+      "title"    : "What happens if mismatched quantity is not approved?",
+      "tags"     : "featured",
+      "url"      : "/mismatch-not-approved"
+    } ,
+  
+    {
+      "title"    : "I need more information about timeline breach",
+      "tags"     : "",
+      "url"      : "/more-info-breach"
+    } ,
+  
+    {
+      "title"    : "What happens when a quality check has issues?",
+      "tags"     : "",
+      "url"      : "/qc-fail"
+    } ,
+  
+    {
+      "title"    : "What is a quantity mismatch ticket?",
+      "tags"     : "featured",
+      "url"      : "/quantity-mismatch"
+    } ,
+  
+    {
+      "title"    : "What are the timelines to confirm?",
+      "tags"     : "",
+      "url"      : "/timelinesto-confirm"
+    } ,
+  
+    {
+      "title"    : "What are the transport details needed for shipment creation?",
+      "tags"     : "featured",
+      "url"      : "/transport-details"
+    } ,
+  
+    {
+      "title"    : "What can result in an SLA breach?",
+      "tags"     : "",
+      "url"      : "/what-causes-slabreach"
+    } ,
+  
+    {
+      "title"    : "What is a dispatch plan?",
+      "tags"     : "",
+      "url"      : "/what-is-dispatchplan"
+    } ,
+  
+    {
+      "title"    : "What is Quality check?",
+      "tags"     : "",
+      "url"      : "/what-is-qc"
+    } ,
+  
+    {
+      "title"    : "What is an SLA breach?",
+      "tags"     : "",
+      "url"      : "/what-is-slabreach"
+    } ,
+  
+    {
+      "title"    : "What is a timeline breach?",
+      "tags"     : "",
+      "url"      : "/what-s-timeline-breach"
+    } ,
+  
+    {
+      "title"    : "What is a breach?",
+      "tags"     : "",
+      "url"      : "/whatisbreach"
+    } ,
+  
+    {
+      "title"    : "When do I create a shipment?",
+      "tags"     : "",
+      "url"      : "/when-cerate-shipment"
+    } ,
+  
+    {
+      "title"    : "What is the use of dispatch plan?",
+      "tags"     : "",
+      "url"      : "/why-dispatch-plan"
+    } ,
+  
+    {
+      "title"    : "Tickets",
+      "tags"     : "",
+      "url"      : "/tickets"
+    } ,
+  
+    {
+      "title"    : "Your Profile",
+      "tags"     : "",
+      "url"      : "/your-profile"
+    } 
+  
+]

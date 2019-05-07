@@ -1,0 +1,34 @@
+<section class="hero_banner">
+    <div class="search_container">
+        <h2 class="search_title">How can we help you?</h2>
+        <form class="search" data-clog-ui-component="hc_home_hero" accept-charset="UTF-8" action="/search" method="get" role="search">
+            <div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+            <input id="search-input" name="query" title="{{site.search}}" placeholder="{{site.search}}"
+                   data-smallplaceholder="Search for questions" type="search" />
+            <input name="commit" type="submit" value="Search" />
+        </form>
+
+        <div class="search_topics">
+            <strong>Most searched topics:</strong>
+            <a href="/timelines/">timelines</a>,
+            <a href="/shipment/">shipments</a>,
+            <a href="/ratings/">ratings</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+<div id="drift-widget-container" style="position: absolute; z-index: 2147483647;">
+    <iframe id="drift-widget" src="https://js.driftt.com/deploy/assets/index.html" title="Drift Messenger" role="complementary"
+            class="drift-widget-hidden" style="border: none; display: block; height: 0px !important; width: 0px !important;
+            position: fixed; top: auto; left: auto; bottom: 0px; right: 0px; visibility: hidden; z-index: 2147483647;
+            max-height: 100vh; max-width: 100vw; transition: none 0s ease 0s; background: none transparent; opacity: 1;">
+
+    </iframe>
+</div>
+
+<ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="results-container" tabindex="0" style="display: none; width: 620px; top: 287px; left: 410px;">
+
+</ul>

@@ -1,0 +1,37 @@
+<!-- Html Elements for Search -->
+
+<section class="hero_banner">
+    <div class="search_container">
+        <h2 class="search_title">How can we help you?</h2>
+        <form class="search" data-clog-ui-component="hc_home_hero" accept-charset="UTF-8" action="/search-results" method="get" role="search">
+            <input id="query" name="query" title="{{site.search}}" placeholder="{{site.search}}"
+                   data-smallplaceholder="Search for questions" type="search" />
+        </form>
+
+
+        <div class="search_topics">
+            <strong>Most searched topics:</strong>
+            <a href="/how-can-i-update-timeline/">timelines</a>,
+            <a href="/when-cerate-shipment/">shipments</a>,
+            <a href="/how-to-improve-ratings/">ratings</a>
+        </div>
+        <ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="result-container"></ul>
+    </div>
+</section>
+
+
+
+<!-- Script pointing to search-script.js -->
+<script src="/assets/js/search.js" type="text/javascript"></script>
+
+<!-- Configuration -->
+<script>
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('query'),
+        resultsContainer: document.getElementById('result-container'),
+        json: '/search.json'
+    })
+</script>
+
+
+
