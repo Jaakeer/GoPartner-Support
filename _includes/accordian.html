@@ -1,284 +1,121 @@
-<div class="row-container  container ">
-    <div class="row mainRow" style="">
-        <div class="column col-sm-6 " datacolumn-id="809" style="  padding:2.4479804161566707vh 0vh;     ">
-            <div class="column-container vertical-top" style="">
-                <div class="module-container  align-center ModuleAccordion
-                         first   last " style=" padding:0 30px 0 30px;  ">
-                    <div class="  module ModuleAccordion " datamodule-id="1712">
-                        <div class="accordion-module-container style1">
-                            <div id="accordion1712" data-module-id="1712">
-                                <div class="accordion-container">
-                                    <div class="accordion-item">
-                                        <div class="accordion-item-content">
-                                            <div class="accordion-item-title">
-                                                <div class="accordion-item-title-wrapper">
-                                                    <div class="icon-container">
-                                                        <i class="uci-plus-2"></i>
+<!-- Featured Questions -->
+<section class="promoted-articles">
+    <h3>Featured Questions</h3>
+
+
+    <div class="row-container  container ">
+        <div class="row mainRow" style="">
+            <div class="column col-sm-6 " datacolumn-id="809" style="  padding:2.4479804161566707vh 0vh;     ">
+                <div class="column-container vertical-top" style="">
+                    <div class="module-container  align-center ModuleAccordion  first   last "
+                         style=" padding:0 30px 0 30px;  ">
+                        <div class="  module ModuleAccordion " datamodule-id="1712">
+                            <div class="accordion-module-container style1">
+
+                                {% for item in site.faqs %}
+                                {% if item.tags contains "featured" %}
+
+                                <div id="accordion1712" data-module-id="1712">
+                                    <div class="accordion-container">
+                                        <div class="accordion-item">
+                                            <div class="accordion-item-content">
+                                                <div class="accordion-item-title">
+                                                    <div class="accordion-item-title-wrapper">
+                                                        <div class="icon-container">
+                                                            <i class="uci-plus-2"></i>
+                                                        </div>
+                                                        <div class="title-container">
+                                                            {{item.title}}
+                                                        </div>
                                                     </div>
-                                                    <div class="title-container">
-                                                        How can I start a blog site?
+                                                </div>
+                                                <div class="accordion-item-description">
+                                                    <div class="description-container">
+                                                        {{item.content}}
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="accordion-item-description">
-                                                <div class="description-container">
-                                                    <p>The word you’re looking for is “easy”! With our Articles app it’s incredibly easy to start and maintain a blog. Choose your topic, write engaging articles, add images, optimize and publish them in just a few steps. Ucraft provides you with all the tools needed to make your blog stand out. All you need is to start writing!</p>
-                                                </div>
-                                            </div>
+                                            <div class="clearfix"></div>
                                         </div>
-                                        <div class="clearfix"></div>
                                     </div>
                                 </div>
-                            </div>
-                            <style>
-                                #accordion1712 .accordion-item {
 
-                                    padding-bottom: 10px;
-
-                                }
-
-                                #accordion1712 .accordion-item-content {
-                                    background: rgba(230, 230, 230, 0.27);
-                                    background-clip: content-box;
+                                {% endif %}
+                                {% endfor %}
 
 
-                                    border-radius: 19.75px;
+                                <style>
+                                    #accordion1712 .accordion-item {
 
-                                }
+                                        padding-bottom: 10px;
 
-                                #accordion1712 .accordion-item .icon-container {
-                                    font-size: 15px;
-                                    color: #444;
-                                    width: 15px;
-                                    height: 15px;
-                                }
+                                    }
 
-                                #accordion1712 .accordion-item .icon-container:hover {
-                                    color: #888;
-                                }
-
-                                #accordion1712 .accordion-item .accordion-item-title .title-container {
-                                    padding-left: 10px;
-                                }
-
-                                #accordion1712 .accordion-item .accordion-item-title {
-                                    color: #4a4a4a;
-                                    font-size: 15px;
-                                    font-weight: 700;
-                                    font-family: Proxima Nova Soft Custom;
-                                    text-align: left;
-                                    letter-spacing: 0px;
+                                    #accordion1712 .accordion-item-content {
+                                        background: rgba(230, 230, 230, 0.27);
+                                        background-clip: content-box;
 
 
-                                }
+                                        border-radius: 19.75px;
 
-                                #accordion1712 .accordion-item .accordion-item-description {
-                                    color: #333;
-                                    font-size: 14px;
-                                    font-family: Proxima Nova Soft Sb Custom;
-                                    font-weight: 500;
-                                    letter-spacing: 0px;
-                                    line-height: 1.5;
+                                    }
+
+                                    #accordion1712 .accordion-item .icon-container {
+                                        font-size: 15px;
+                                        color: #444;
+                                        width: 15px;
+                                        height: 15px;
+                                    }
+
+                                    #accordion1712 .accordion-item .icon-container:hover {
+                                        color: #888;
+                                    }
+
+                                    #accordion1712 .accordion-item .accordion-item-title .title-container {
+                                        padding-left: 10px;
+                                    }
+
+                                    #accordion1712 .accordion-item .accordion-item-title {
+                                        color: #4a4a4a;
+                                        font-size: 15px;
+                                        font-weight: 700;
+                                        font-family: Proxima Nova Soft Custom;
+                                        text-align: left;
+                                        letter-spacing: 0px;
 
 
-                                }
+                                    }
 
-                                #accordion1712 .accordion-item .accordion-item-description .description-container {
-                                    margin-top: 10px;
-                                    margin-bottom: 15px;
-                                    transform: none;;
-                                }
+                                    #accordion1712 .accordion-item .accordion-item-description {
+                                        color: #333;
+                                        font-size: 14px;
+                                        font-family: Proxima Nova Soft Sb Custom;
+                                        font-weight: 500;
+                                        letter-spacing: 0px;
+                                        line-height: 1.5;
 
-                                #accordion1712 .accordion-item .accordion-item-description .description-container a {
-                                    color: #333;
-                                }
 
-                                #accordion1712 .accordion-item .accordion-item-description .description-container a:hover {
-                                    color: #333;
-                                }
-                            </style></div> </div>
+                                    }
+
+                                    #accordion1712 .accordion-item .accordion-item-description .description-container {
+                                        margin-top: 10px;
+                                        margin-bottom: 15px;
+                                        transform: none;;
+                                    }
+
+                                    #accordion1712 .accordion-item .accordion-item-description .description-container a {
+                                        color: #333;
+                                    }
+
+                                    #accordion1712 .accordion-item .accordion-item-description .description-container a:hover {
+                                        color: #333;
+                                    }
+                                </style></div> </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="column col-sm-6 " datacolumn-id="810" style="  padding:2.4479804161566707vh 0vh;     ">
-            <div class="column-container vertical-top" style="">
-                <div class="module-container  align-center ModuleAccordion
-                         first   last " style=" padding:0 30px 0 30px;  ">
-                    <div class="  module ModuleAccordion " datamodule-id="1713">
-                        <div class="accordion-module-container style1">
-                            <div id="accordion1713" data-module-id="1713">
-                                <div class="accordion-container">
-                                    <div class="accordion-item">
-                                        <div class="accordion-item-content">
-                                            <div class="accordion-item-title">
-                                                <div class="accordion-item-title-wrapper">
-                                                    <div class="icon-container">
-                                                        <i class="uci-plus-2"></i>
-                                                    </div>
-                                                    <div class="title-container">
-                                                        Do I need any technical skills?
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item-description">
-                                                <div class="description-container" style="display: none;">
-                                                    None whatsoever. That’s the best part, you don’t need an in-depth knowledge of coding, design or anything similar. When we say that everything on Ucraft website builder is based on a drag-and-drop system, we really mean that. The same goes for the Articles App. You just need enthusiasm, passion for writing and a touch of creativity to start your new blog.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <div class="accordion-item-content">
-                                            <div class="accordion-item-title">
-                                                <div class="accordion-item-title-wrapper">
-                                                    <div class="icon-container">
-                                                        <i class="uci-plus-2"></i>
-                                                    </div>
-                                                    <div class="title-container">
-                                                        What is a blog used for?
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item-description">
-                                                <div class="description-container">
-                                                    Literally anything that you’d love to share with the world. It doesn’t have to be only for your business. The purpose of every blog is either to educate or share thoughts and experience. With that in mind, it’s easy to see that your options are limitless. Create a travel, fashion, lifestyle, health, fitness, or any other type of blog for your hobby or work. You don’t even need to have a specific form or structure; you can use it as an online journal or a space to post your creative writing.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <div class="accordion-item-content">
-                                            <div class="accordion-item-title">
-                                                <div class="accordion-item-title-wrapper">
-                                                    <div class="icon-container">
-                                                        <i class="uci-plus-2"></i>
-                                                    </div>
-                                                    <div class="title-container">
-                                                        Do I need a hosting for my blog?
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item-description">
-                                                <div class="description-container">
-                                                    Don’t you worry about that either, we got you covered! Ucraft provides free cloud hosting by Google to all our users, without any stress or hassle.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <div class="accordion-item-content">
-                                            <div class="accordion-item-title">
-                                                <div class="accordion-item-title-wrapper">
-                                                    <div class="icon-container">
-                                                        <i class="uci-plus-2"></i>
-                                                    </div>
-                                                    <div class="title-container">
-                                                        Can I enable commenting on my blog?
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item-description">
-                                                <div class="description-container">
-                                                    Absolutely! Ucraft has an awesome integration with Disqus - a feature-rich commenting system allowing your site visitors to make comments globally.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <div class="accordion-item-content">
-                                            <div class="accordion-item-title">
-                                                <div class="accordion-item-title-wrapper">
-                                                    <div class="icon-container">
-                                                        <i class="uci-plus-2"></i>
-                                                    </div>
-                                                    <div class="title-container">
-                                                        Where can I learn about new or upcoming features of blogging?
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item-description">
-                                                <div class="description-container">
-                                                    Be sure to subscribe to our Blog for enhancing your online presence with tactics and advice from Ucraft.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <style>
-                                #accordion1713 .accordion-item {
-
-                                    padding-bottom: 10px;
-
-                                }
-
-                                #accordion1713 .accordion-item-content {
-                                    background: rgba(230, 230, 230, 0.27);
-                                    background-clip: content-box;
-
-
-                                    border-radius: 19.75px;
-
-                                }
-
-                                #accordion1713 .accordion-item .icon-container {
-                                    font-size: 15px;
-                                    color: #444;
-                                    width: 15px;
-                                    height: 15px;
-                                }
-
-                                #accordion1713 .accordion-item .icon-container:hover {
-                                    color: #888;
-                                }
-
-                                #accordion1713 .accordion-item .accordion-item-title .title-container {
-                                    padding-left: 10px;
-                                }
-
-                                #accordion1713 .accordion-item .accordion-item-title {
-                                    color: #4a4a4a;
-                                    font-size: 15px;
-                                    font-weight: 700;
-                                    font-family: Proxima Nova Soft Custom;
-                                    text-align: left;
-                                    letter-spacing: 0px;
-
-
-                                }
-
-                                #accordion1713 .accordion-item .accordion-item-description {
-                                    color: #333;
-                                    font-size: 14px;
-                                    font-family: Proxima Nova Soft Sb Custom;
-                                    font-weight: 500;
-                                    letter-spacing: 0px;
-                                    line-height: 1.5;
-
-
-                                }
-
-                                #accordion1713 .accordion-item .accordion-item-description .description-container {
-                                    margin-top: 10px;
-                                    margin-bottom: 15px;
-                                    transform: none;;
-                                }
-
-                                #accordion1713 .accordion-item .accordion-item-description .description-container a {
-                                    color: #333;
-                                }
-
-                                #accordion1713 .accordion-item .accordion-item-description .description-container a:hover {
-                                    color: #333;
-                                }
-                            </style></div> </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
+
+
+</section>
