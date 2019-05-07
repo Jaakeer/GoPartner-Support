@@ -21,7 +21,7 @@ logo: "/assets/logo.ico"
 image: "/assets/gopartner-icon.png"
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://partnerhelp.bizongo.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jaakeer.github.io/GoPartner-Support" # the base hostname & protocol for your site, e.g. http://example.com
 
 contact_us: "mailto:product@bizongo.com"
 search: Search for anything (quotes, timelines, ratings or payments) ... # the placeholder search in the front page
