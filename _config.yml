@@ -37,9 +37,10 @@ plugins:
 collections:
    projects:
       output: true
-
+      permalink: /:collection/:title
    faqs:
       output: true
+      permalink: /:collection/:title
 
 
 
